@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="this" />
+    <title>TEST</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .h1 {
+        text-align: center;
+        margin: 5px;
+        padding: 10px;
+      }
+
+      .cities {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        
+      }
+
+      .city {
+        flex: 0 1 auto;
+        width: 23%;
+        margin: 10px;
+        border: 1px solid red;
+        padding: 5px 40px 10px 40px;
+      }
+
+      @media only screen and (max-width: 1150px) {
+        .city {
+          
+          width: 30%;
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        .city {
+          
+          width: 45%;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .city {
+          
+          width: 91%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="h1">Bubble</h1>
+    <hr />
+    <h2>
+      <big><i>Resize</i></big> this responsive page!
+    </h2>
+    <br />
+
+    <div class="cities">
+      <div class="city">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>
+          It is the most populous city in the United Kingdom, with a
+          metropolitan area of over 13 million inhabitants.
+        </p>
+      </div>
+
+      <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital and most populous city of France.</p>
+      </div>
+
+      <div class="city">
+        <h2>Tokyo</h2>
+        <p>
+          Tokyo is the capital of Japan, the center of the Greater Tokyo Area.
+        </p>
+      </div>
+
+      <div class="city">
+        <h2>Shanghai</h2>
+        <p>
+          Shanghai is one of the biggest cities of China, the center of the Changsanjiao Economy Area,
+          and the most populous metropolitan area in the world.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
